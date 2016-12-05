@@ -9,7 +9,8 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
+	beego.Info("index tesdt")
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "index.tpl"
+	c.TplName = "Index.tpl"
 }
